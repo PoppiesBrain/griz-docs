@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Griz</title>
+    <meta name="description" content="Terms of Service for Griz — AI Dating Coach">
+    <meta name="theme-color" content="#0B0A10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Inter:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0B0A10;
+            --surface: #1A1721;
+            --accent: #A78BFA;
+            --accent-pink: #F0ABFC;
+            --text: #FFFFFF;
+            --text-secondary: #B8B5C4;
+            --text-muted: #6E6A78;
+            --border: #2A2530;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: -20%;
+            right: -20%;
+            width: 60%;
+            height: 60%;
+            background: radial-gradient(circle, rgba(240, 171, 252, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        main { position: relative; z-index: 1; }
+
+        nav {
+            padding: 24px 32px;
+            max-width: 820px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .wordmark {
+            font-weight: 900;
+            font-style: italic;
+            font-size: 22px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .back {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .back:hover { color: var(--text); }
+
+        .content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 32px 80px;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-style: italic;
+            font-size: clamp(36px, 5vw, 52px);
+            line-height: 1.1;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+
+        h1 .grad {
+            background: linear-gradient(90deg, var(--accent), var(--accent-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .updated {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .intro p:last-child { margin-bottom: 0; }
+
+        h2 {
+            font-weight: 800;
+            font-style: italic;
+            font-size: 24px;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.75;
+        }
+
+        ul { padding-left: 0; list-style: none; margin-bottom: 16px; }
+
+        li {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            line-height: 1.7;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 11px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        li strong, p strong { color: var(--text); font-weight: 600; }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-pink); }
+
+        .callout {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent-pink);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: 0.3px;
+        }
+
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 24px;
+        }
+
+        .contact-card p { margin-bottom: 8px; }
+        .contact-card p:last-child { margin-bottom: 0; }
+
+        .contact-card .company {
+            color: var(--text);
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 24px;
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover { color: var(--text); }
+
+        @media (max-width: 640px) {
+            nav { padding: 20px 24px; }
+            .content { padding: 16px 24px 60px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="wordmark">Griz</a>
+        <a href="index.html" class="back">&larr; Back home</a>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h1>Terms of <span class="grad">Service</span></h1>
+            <p class="updated">Last updated: April 23, 2026</p>
+
+            <div class="intro">
+                <p style="color: var(--text); margin-bottom: 12px;"><strong>Plain-English summary:</strong></p>
+                <p>By using Griz you agree to these terms. Griz generates suggestions using AI — you decide whether to use them and you remain responsible for what you send. Don't break the law with it, don't try to reverse-engineer it, and don't rely on it for medical, legal, or financial advice. A full legal-style version of these terms follows below. The Apple-mandated EULA also applies and is linked at the bottom.</p>
+            </div>
+
+            <p>These Terms of Service ("Terms") form a binding agreement between you and GOOSEBUMPS LLC ("Griz," "we," "our," "us") governing your use of the Griz mobile application, its keyboard and iMessage extensions, and any related services or websites (together, the "Service").</p>
+
+            <p>By downloading, installing, or using the Service, you agree to these Terms and to our <a href="privacy-policy.html">Privacy Policy</a>. If you don't agree, don't use the Service.</p>
+
+            <h2>1. Eligibility</h2>
+            <p>You must be at least <strong>17 years old</strong> to use Griz. By using the Service you represent that you meet this age requirement and that you have the legal capacity to enter into this agreement. If you are using Griz on behalf of an organization, you represent that you are authorized to bind that organization.</p>
+
+            <h2>2. What Griz is — and what it isn't</h2>
+            <p>Griz uses AI models (currently Anthropic's Claude) to read the conversational context you submit and generate suggested replies, openers, and coaching advice in a tone you pick.</p>
+
+            <div class="callout">
+                <p><strong>Griz is not a licensed professional.</strong> The Service does not provide professional advice and is <span class="uppercase">not a substitute</span> for medical, psychological, legal, financial, or relationship-counseling advice from a qualified human. If you are in crisis, please contact a qualified professional or your local emergency services.</p>
+            </div>
+
+            <p>Suggestions generated by Griz may contain mistakes, omissions, or outputs you disagree with. <strong>You decide what to send.</strong> Read the suggestions, edit them as you like, and only send messages you're comfortable owning. Outcomes — including how a match responds, whether a date happens, or anything that follows — depend on the real people involved and are not guaranteed by us.</p>
+
+            <h2>3. Your content</h2>
+            <p>"Your Content" means the screenshots, text, tone selections, and any other input you submit to Griz.</p>
+            <p>You retain all ownership rights in Your Content. You grant us a limited, non-exclusive, royalty-free license to process Your Content solely to deliver the Service to you — namely, to transmit it to our AI provider, receive suggestions, and return those suggestions to you. This license ends immediately when processing completes.</p>
+            <p><strong>You represent and warrant that:</strong></p>
+            <ul>
+                <li>You have the right to submit Your Content, including any screenshot containing messages sent by other people who you are in a conversation with.</li>
+                <li>Your Content does not violate any law, any third party's rights, or these Terms.</li>
+                <li>You will not use Griz to process content involving minors (under 18) in any romantic, sexual, or grooming context.</li>
+                <li>You will not submit content depicting non-consensual sexual material, sexual content involving a person who has not clearly consented, or material that is abusive, harassing, or threatening.</li>
+            </ul>
+
+            <h2>4. Acceptable use</h2>
+            <p>When using Griz, you agree not to:</p>
+            <ul>
+                <li>Impersonate any person or misrepresent your affiliation with anyone.</li>
+                <li>Use the Service to harass, stalk, defraud, deceive, coerce, or catfish another person.</li>
+                <li>Use the Service to generate content that is illegal, defamatory, threatening, or that incites violence.</li>
+                <li>Automate, scrape, crawl, or otherwise use the Service in a way not contemplated by the app's user interface.</li>
+                <li>Reverse-engineer, decompile, or attempt to extract the source code of the Service or the underlying AI models.</li>
+                <li>Probe, scan, or test the vulnerability of the Service, or attempt to bypass rate limits, quotas, or security controls.</li>
+                <li>Resell, sublicense, or commercially redistribute the Service or the AI suggestions it produces.</li>
+                <li>Use the Service in a way that violates Anthropic's Acceptable Use Policy (see <a href="https://www.anthropic.com/legal/aup" target="_blank" rel="noopener">anthropic.com/legal/aup</a>) or Apple's App Store terms.</li>
+            </ul>
+            <p>We may suspend or terminate your access if we reasonably believe you have violated these rules.</p>
+
+            <h2>5. AI output &mdash; limitations you should know</h2>
+            <ul>
+                <li><strong>AI can be wrong.</strong> Suggestions may be inaccurate, misread context from a screenshot, or produce phrasing that doesn't reflect your voice.</li>
+                <li><strong>AI can be generic.</strong> Edit before sending.</li>
+                <li><strong>AI doesn't know the other person.</strong> Griz sees only what you submit. It doesn't know history, feelings, or nuances outside the screenshot.</li>
+                <li><strong>Outputs are not legal or medical advice.</strong> Don't rely on Griz for advice in domains that require professional expertise.</li>
+                <li><strong>Similar outputs across users.</strong> Because AI models generate statistically likely text, two users submitting similar inputs may receive similar outputs. We do not claim AI-generated suggestions are unique to you.</li>
+            </ul>
+
+            <h2>6. Subscriptions, free tier, and billing</h2>
+
+            <h3>Free tier</h3>
+            <p>Griz offers a free tier limited to <strong>3 AI generations per day</strong>, measured on a rolling 24-hour UTC day. No credit card is required for the free tier.</p>
+
+            <h3>Paid subscriptions</h3>
+            <p>Griz offers paid subscription plans giving you unlimited generations and access to additional features. Current pricing and plan options are displayed in the app prior to purchase.</p>
+            <p>Subscriptions are billed through your Apple ID:</p>
+            <ul>
+                <li>Payment is charged to your Apple ID at purchase confirmation.</li>
+                <li>Subscriptions <strong>automatically renew</strong> unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+                <li>You can manage and cancel subscriptions at any time by going to your <strong>Apple ID Account Settings → Subscriptions</strong> on your iOS device.</li>
+                <li>Any unused portion of a free trial is forfeited when you purchase a subscription.</li>
+            </ul>
+            <p>Refunds are handled by Apple according to Apple's refund policy. We cannot issue refunds directly for purchases made through the App Store. Request a refund at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+            <h2>7. Price changes</h2>
+            <p>We may change subscription prices for future billing periods. If we do, we will notify you before the change takes effect and give you the opportunity to cancel before the new price is charged.</p>
+
+            <h2>8. Intellectual property</h2>
+            <p>The Griz app, its name, logo, wordmark, design, and the code behind it are owned by GOOSEBUMPS LLC and protected by copyright, trademark, and other laws. Subject to these Terms, we grant you a personal, revocable, non-exclusive, non-transferable license to install and use one copy of the app on an Apple device you own or control, solely for your personal, non-commercial use.</p>
+            <p>Nothing in these Terms grants you any right in our trademarks or trade dress.</p>
+
+            <h2>9. Third-party services</h2>
+            <p>The Service uses third-party providers including Anthropic (AI), RevenueCat (subscription management), Apple (platform and billing), and Fly.io (hosting). Their terms and privacy policies apply to their portions of the Service. See our <a href="privacy-policy.html">Privacy Policy</a> for the list and links.</p>
+
+            <h2>10. Disclaimers</h2>
+            <p class="uppercase" style="font-size: 14px; color: var(--text); margin-bottom: 16px;">The Service is provided "as is" and "as available."</p>
+            <p>To the maximum extent permitted by law, we disclaim all warranties, express or implied, including any implied warranties of merchantability, fitness for a particular purpose, non-infringement, and any warranty arising out of course of dealing or usage of trade. We do not warrant that the Service will be uninterrupted, error-free, secure, or free of harmful components, or that AI-generated suggestions will be accurate, complete, or fit for any particular purpose.</p>
+            <p>We make no representations or warranties about the outcome of any interaction you have as a result of using Griz — including whether someone responds, whether a date occurs, or the quality of any relationship that forms or doesn't.</p>
+
+            <h2>11. Limitation of liability</h2>
+            <p class="uppercase" style="font-size: 14px; color: var(--text); margin-bottom: 16px;">To the maximum extent permitted by law:</p>
+            <p>In no event will GOOSEBUMPS LLC, its officers, directors, employees, or agents be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages, including loss of profits, data, goodwill, or other intangible losses, arising out of or related to your use of the Service, even if we have been advised of the possibility of such damages.</p>
+            <p>Our total aggregate liability for any claim arising out of or relating to these Terms or the Service will not exceed the greater of (a) the amount you paid us for the Service in the twelve (12) months preceding the claim, or (b) twenty United States dollars (US$20).</p>
+            <p>Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above may not apply to you. In those jurisdictions our liability is limited to the fullest extent permitted by law.</p>
+
+            <h2>12. Indemnification</h2>
+            <p>You agree to defend, indemnify, and hold harmless GOOSEBUMPS LLC and its affiliates from and against any claims, damages, obligations, losses, liabilities, costs, or expenses (including reasonable attorney's fees) arising from: (i) your use of the Service; (ii) your violation of these Terms; (iii) your violation of any third-party right, including any right of privacy or intellectual property right; or (iv) any content you submit to the Service.</p>
+
+            <h2>13. Termination</h2>
+            <p>You may stop using the Service at any time by deleting the app. We may suspend or terminate your access immediately, without notice, if we reasonably believe you have violated these Terms or if continued provision of the Service to you would expose us to legal risk.</p>
+            <p>Sections that by their nature should survive termination will survive, including sections 3 (license back to us while processing), 8 (IP), 10 (disclaimers), 11 (liability), 12 (indemnification), and 15 (governing law).</p>
+
+            <h2>14. Apple-specific terms</h2>
+            <p>If you downloaded the Griz app from the Apple App Store, the following additional terms apply between you, us, and Apple, Inc.:</p>
+            <ul>
+                <li>These Terms are an agreement between you and us — not with Apple. Apple is not responsible for the Service or its content.</li>
+                <li>Apple has no obligation to provide any maintenance or support for the Service.</li>
+                <li>In the event of any failure of the Service to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the app; to the maximum extent permitted by law, Apple has no other warranty obligation.</li>
+                <li>We, not Apple, are responsible for addressing any claims relating to the Service or your use of it.</li>
+                <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms and, upon your acceptance, will have the right to enforce them against you.</li>
+                <li>You also agree to Apple's standard EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">apple.com/legal/internet-services/itunes/dev/stdeula/</a>.</li>
+            </ul>
+
+            <h2>15. Governing law and disputes</h2>
+            <p>These Terms are governed by the laws of the State of Delaware, United States, without regard to conflict-of-laws rules. You agree that any dispute not resolved informally will be brought exclusively in the state or federal courts located in Delaware, and you consent to the personal jurisdiction of those courts.</p>
+            <p>Nothing in this section prevents either party from seeking injunctive or equitable relief in any court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights.</p>
+
+            <h2>16. Changes to these Terms</h2>
+            <p>We may update these Terms from time to time. When we do, we will post the revised Terms on this page and update the "Last updated" date. If the changes are material, we will surface them in the app. Your continued use of the Service after a change means you accept the revised Terms.</p>
+
+            <h2>17. Contact</h2>
+            <p>Questions about these Terms? Reach us:</p>
+            <div class="contact-card">
+                <p class="company">GOOSEBUMPS LLC</p>
+                <p>Email: <a href="mailto:griz@gsbmps.com">griz@gsbmps.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GOOSEBUMPS LLC. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple EULA</a>
+        </div>
+    </footer>
+
+</body>
+</html>
