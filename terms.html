@@ -189,6 +189,15 @@
                 <li>Caps free users at 3 generations per day; paid subscribers receive unlimited generations</li>
             </ul>
             <p><strong>Important:</strong> Griz suggestions are drafts, not professional advice. The AI may make errors, suggest inappropriate content, or misunderstand context. You are solely responsible for reviewing, editing, and deciding whether to send any message before it reaches another person.</p>
+            <h2>3A. Keyboard Extension &amp; Message Context Transmission</h2>
+            <p class="section-intro">How Griz uses text context when you tap Generate in the keyboard.</p>
+            <p>When using the Griz keyboard extension, tapping "Generate" will transmit up to 500 characters of surrounding text (before and after your cursor) to Anthropic's Claude AI model. This text may include:</p>
+            <ul>
+                <li>Your own messages and drafts</li>
+                <li>Messages from the other person in the conversation</li>
+                <li>Other contextual information visible in the conversation thread</li>
+            </ul>
+            <p>This content is transmitted over HTTPS, processed by Claude, and not retained by Griz or Anthropic for training. <strong>You are responsible for ensuring you have the legal right to share this data with us.</strong> If the context includes another person's private messages, you represent and warrant that you have their consent to submit this content for AI processing. California law (Penal Code §631) prohibits unauthorized disclosure of private communications, and you alone bear responsibility for compliance.</p>
             <h2>4. Account &amp; Authentication</h2>
             <p class="section-intro">Griz does not require an account. We use a device ID instead.</p>
             <p>Griz does not ask for your name, email, phone number, or password. Instead, a unique device identifier (UUID) is auto-generated on first use and stored in the app group shared by Griz's three targets (main app, keyboard extension, iMessage extension). This UUID is used to track your daily generation quota and billing status. You can view your device ID in the Griz app under Settings.</p>
@@ -200,6 +209,17 @@
                 <li><strong>Monthly plan:</strong> $3.99 per month</li>
             </ul>
             <p>All pricing is in USD. Subscriptions are billed to your Apple ID account and renewed automatically at the end of each billing period unless canceled. Billing is handled entirely by Apple; Poppies Studios does not store or process your payment information. You can manage or cancel subscriptions at any time through iOS Settings &gt; [Your Name] &gt; Subscriptions.</p>
+            <h2>5A. Auto-Renewing Subscription Terms (ROSCA Compliance)</h2>
+            <p class="section-intro">Important disclosures about your subscription before you purchase.</p>
+            <p><strong>Free Trial &amp; Auto-Renewal:</strong></p>
+            <ul>
+                <li>Your free trial begins immediately and lasts <strong>3 days</strong> (for the weekly plan)</li>
+                <li>At the end of Day 3, your free trial automatically converts to a paid subscription</li>
+                <li>You will be charged <strong>$7.99 per week</strong> starting Day 4, then every 7 days</li>
+                <li>You can cancel anytime in iOS Settings &gt; [Your Name] &gt; Subscriptions</li>
+                <li>There are NO refunds for partial billing periods, except as required by Apple</li>
+                <li>Cancellation must occur at least 24 hours before your next billing date to avoid charges</li>
+            </ul>
             <h2>6. Free Trial</h2>
             <p class="section-intro">Some plans include a free trial before charging begins.</p>
             <p>Free trial length varies by plan and is displayed on the paywall before purchase. Your subscription will automatically renew at the end of the trial unless canceled in iOS Settings before the trial ends. Cancellation must occur at least 24 hours before renewal to avoid being charged.</p>
@@ -214,7 +234,19 @@
             <p>You retain all rights to screenshots, messages, or text you submit. By submitting, you warrant you own the content and have consent from anyone else pictured. We process your content solely to provide Griz and do not retain it after processing. Anthropic does not train on API content by default.</p>
             <h2>10. AI Disclaimer</h2>
             <p class="section-intro">AI suggestions are not professional advice. The model can make mistakes.</p>
-            <p>Griz uses Anthropic's Claude model. AI models can produce inaccurate, misleading, or inappropriate output; misunderstand context; or hallucinate facts. You are solely responsible for reviewing every suggestion before sending it.</p>
+            <p>Griz uses Anthropic's Claude model. AI models can produce inaccurate, misleading, or inappropriate output; misunderstand context; or hallucinate facts. You are solely responsible for reviewing every suggestion before sending it. Griz is a coaching tool only and is not a substitute for professional relationship advice, therapy, or counseling.</p>
+            <h2>10A. AI-Generated Content &amp; Dating Platform Disclosure (CA AB 1001 &amp; NY S.4625)</h2>
+            <p class="section-intro">Your responsibility when using Griz suggestions on dating apps.</p>
+            <p>Griz provides AI-generated suggestions for dating messages. You alone are responsible for how you use these suggestions. You represent and warrant that:</p>
+            <ul>
+                <li>You will review each suggestion for accuracy and appropriateness before sending</li>
+                <li>If you send a suggestion to another person on a dating platform, that person has the right to know the message was drafted with AI assistance</li>
+                <li>You will not fraudulently represent an AI-generated message as your own original thought if the recipient objects to AI-assisted conversation</li>
+                <li>You will comply with the terms of service of any dating platform you use (Hinge, Bumble, Tinder, etc.) regarding use of AI tools</li>
+            </ul>
+            <p><strong>California Residents (AB 1001):</strong> If you use Griz suggestions in messages on dating platforms, you acknowledge that California law requires you to be transparent about AI use if the recipient requests disclosure.</p>
+            <p><strong>New York Residents (S.4625):</strong> If you use Griz in conjunction with any dating service licensed to operate in New York, you acknowledge that New York law requires disclosure of AI use. You will not use Griz to generate content for a dating profile or match message on a NY platform without clearly indicating to the recipient that the content was drafted with AI assistance.</p>
+            <p>Griz is a coaching tool, not a dating app. Griz makes no representations about the legal or ethical implications of using AI-generated content in your dating conversations, and you alone are liable for the consequences of your use.</p>
             <h2>11. Termination</h2>
             <p class="section-intro">We can terminate your access if you violate these terms.</p>
             <p>We may suspend or terminate your access at any time if you violate these terms or abuse the Service. Upon termination, your right to use Griz ceases immediately.</p>
@@ -258,6 +290,7 @@
     </main>
     <footer>
         <p>&copy; 2026 Poppies Studios. All rights reserved.</p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 16px;">Claude and Claude AI are trademarks of Anthropic, Inc. Griz is an independent product by Poppies Studios and is not endorsed by Anthropic.</p>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="privacy.html">Privacy Policy</a>

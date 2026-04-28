@@ -1,3 +1,4 @@
+<!-- LAWYER REVIEW BEFORE PRODUCTION -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,6 @@
         :root {
             --bg: #0B0A10;
             --surface: #1A1721;
-            --surface-raised: #242030;
             --accent: #A78BFA;
             --accent-pink: #F0ABFC;
             --text: #FFFFFF;
@@ -21,9 +21,7 @@
             --text-muted: #6E6A78;
             --border: #2A2530;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg);
@@ -31,7 +29,6 @@
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
-
         body::before {
             content: '';
             position: fixed;
@@ -43,9 +40,7 @@
             pointer-events: none;
             z-index: 0;
         }
-
         main { position: relative; z-index: 1; }
-
         nav {
             padding: 24px 32px;
             max-width: 820px;
@@ -54,7 +49,6 @@
             align-items: center;
             justify-content: space-between;
         }
-
         .wordmark {
             font-weight: 900;
             font-style: italic;
@@ -65,24 +59,18 @@
             -webkit-text-fill-color: transparent;
             text-decoration: none;
         }
-
         .back {
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 14px;
-            transition: color 0.2s;
         }
-
         .back:hover { color: var(--text); }
-
         .content {
             max-width: 760px;
             margin: 0 auto;
             padding: 24px 32px 80px;
         }
-
         h1 {
-            font-family: 'Inter', sans-serif;
             font-weight: 900;
             font-style: italic;
             font-size: clamp(36px, 5vw, 52px);
@@ -90,124 +78,57 @@
             letter-spacing: -1px;
             margin-bottom: 8px;
         }
-
         h1 .grad {
             background: linear-gradient(90deg, var(--accent), var(--accent-pink));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .updated {
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 40px;
-        }
-
-        .intro {
+        .subtitle {
             font-size: 17px;
             color: var(--text-secondary);
-            line-height: 1.7;
             margin-bottom: 48px;
-            padding: 24px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
         }
-
-        h2 {
-            font-family: 'Inter', sans-serif;
+        h2, h3 {
             font-weight: 800;
             font-style: italic;
-            font-size: 24px;
-            margin-top: 48px;
-            margin-bottom: 16px;
-            letter-spacing: -0.3px;
-            color: var(--text);
-        }
-
-        h3 {
-            font-size: 17px;
-            font-weight: 700;
-            margin-top: 24px;
-            margin-bottom: 10px;
-            color: var(--text);
-        }
-
-        p {
-            font-size: 16px;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-            line-height: 1.75;
-        }
-
-        ul {
-            padding-left: 0;
-            list-style: none;
-            margin-bottom: 16px;
-        }
-
-        li {
-            font-size: 16px;
-            color: var(--text-secondary);
+            margin-top: 28px;
             margin-bottom: 14px;
+        }
+        h2 { font-size: 20px; }
+        h3 { font-size: 16px; }
+        .section-intro {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-secondary);
             line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        strong { color: var(--text); font-weight: 600; }
+        ul, ol {
             padding-left: 24px;
-            position: relative;
+            margin-bottom: 12px;
         }
-
-        li::before {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 11px;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: var(--accent);
-        }
-
-        li strong {
-            color: var(--text);
-            font-weight: 600;
-        }
-
+        li { margin-bottom: 6px; }
         a {
             color: var(--accent);
             text-decoration: none;
-            transition: color 0.2s;
         }
-
-        a:hover { color: var(--accent-pink); }
-
-        .callout {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-left: 3px solid var(--accent);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin: 24px 0;
+        a:hover {
+            color: var(--accent-pink);
         }
-
-        .callout strong { color: var(--text); }
-
-        .contact-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 28px;
-            margin-top: 24px;
+        .updated {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
         }
-
-        .contact-card p { margin-bottom: 8px; }
-        .contact-card p:last-child { margin-bottom: 0; }
-
-        .contact-card .company {
-            color: var(--text);
-            font-weight: 700;
-            font-size: 17px;
-        }
-
         footer {
             border-top: 1px solid var(--border);
             padding: 32px 24px;
@@ -215,164 +136,132 @@
             margin: 0 auto;
             text-align: center;
         }
-
         footer p {
             font-size: 13px;
             color: var(--text-muted);
             margin-bottom: 12px;
         }
-
         .footer-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 24px;
         }
-
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 13px;
         }
-
         .footer-links a:hover { color: var(--text); }
-
         @media (max-width: 640px) {
             nav { padding: 20px 24px; }
             .content { padding: 16px 24px 60px; }
+            h2 { font-size: 18px; }
         }
     </style>
 </head>
 <body>
-
     <nav>
         <a href="index.html" class="wordmark">Griz</a>
         <a href="index.html" class="back">&larr; Back home</a>
     </nav>
-
     <main>
         <div class="content">
             <h1>Privacy <span class="grad">Policy</span></h1>
-            <p class="updated">Last updated: April 23, 2026</p>
-
-            <div class="intro">
-                <p style="color: var(--text); margin-bottom: 12px;"><strong>The short version:</strong></p>
-                <p style="margin-bottom: 0;">We process the screenshots and text you send through Griz just long enough to generate reply suggestions, then we discard them. We don't store your message content, we don't train AI models on your data, we don't run ad trackers, and we don't sell anything to anyone. This page explains the full details.</p>
-            </div>
-
-            <p>Griz ("Griz," "we," "our," or "us") is developed by GOOSEBUMPS LLC. This Privacy Policy explains what information we handle when you use the Griz iOS app, its keyboard extension, its iMessage extension, and the related website and services (together, the "Service").</p>
-
-            <h2>1. What we collect</h2>
-
-            <h3>Content you send for AI suggestions</h3>
-            <p>When you tap <em>Generate</em>, Griz sends the following to our backend to produce reply suggestions:</p>
+            <p class="subtitle">Last updated: April 27, 2026. We don't sell your data or train on it.</p>
+            <h2>1. Overview</h2>
+            <p class="section-intro">We are deeply transparent about what we collect, how we use it, and who we share it with.</p>
+            <p>Poppies Studios ("we," "us," "our") operates Griz, an iOS app that helps you draft dating messages using AI. This Privacy Policy explains what information we collect, how we use it, and your rights. By using Griz, you consent to this Privacy Policy.</p>
+            <h2>2. What We Collect</h2>
+            <p class="section-intro">We collect very little — device ID, your screenshots/text, subscription status, and basic logs.</p>
+            <h3>Device ID</h3>
+            <p>A unique, auto-generated UUID is created on first app launch and stored in the iOS app group shared by all three targets (main app, keyboard extension, iMessage extension). This ID is used to track your daily generation quota (3 free, unlimited with subscription), store your subscription status from RevenueCat, and associate your generation history in the local database. The device ID is not tied to your identity — it is not your name, email, phone number, or Apple ID.</p>
+            <h3>Screenshot &amp; Text Content</h3>
+            <p>When you tap "Generate," any screenshot or message context you submit is sent to our backend via HTTPS, immediately forwarded to Anthropic's Claude model, NOT stored to disk, NOT logged as content, and discarded after the API response is returned to your device. We use Anthropic's commercial API, which does not train on your data by default. <strong>When using the Griz keyboard extension, up to 500 characters of text surrounding your cursor — which may include messages from other people — is transmitted to Anthropic for processing. See the Terms of Service (Section 3A) for your responsibilities regarding third-party messages.</strong></p>
+            <h3>Subscription &amp; Billing</h3>
+            <p>Your subscription status is managed by Apple via In-App Purchase and retrieved from RevenueCat. We receive whether you have an active subscription, your subscription plan, and renewal dates. We do NOT receive your credit card number or payment details — Apple handles those.</p>
+            <h3>API Logs &amp; Metadata</h3>
+            <p>Our backend logs minimal metadata: device UUID, timestamp, selected tone, request/response size, and latency. Logs do NOT include the actual content of screenshots or messages.</p>
+            <h2>3. What We Do NOT Collect</h2>
+            <p class="section-intro">We deliberately avoid collecting many things that other apps grab.</p>
             <ul>
-                <li><strong>Screenshot image data</strong> — the chat or profile screenshot you picked or the one you took before opening Griz. Sent only when you explicitly trigger a generation.</li>
-                <li><strong>Text around your cursor</strong> — when you use the Griz keyboard extension, we read up to 500 characters before and 500 characters after your typing cursor from the active text field, so the AI can see the conversation you're replying to.</li>
-                <li><strong>Tone selection</strong> — which of the five tones (Flirty, Funny, Deep, Casual, Witty) you chose.</li>
-                <li><strong>Free-form situation text</strong> — if you use the "Describe your situation" feature, the text you type.</li>
+                <li>Your name, email address, or phone number</li>
+                <li>Your Apple ID or sign-in credentials</li>
+                <li>Your location or GPS data</li>
+                <li>Contact list, photos library (except what you explicitly upload), or calendar</li>
+                <li>Device identifiers like IDFA or IDFV</li>
+                <li>Browsing history or app usage</li>
+                <li>Keystroke logs or background monitoring</li>
             </ul>
-            <p>We forward this content to our AI provider, <strong>Anthropic</strong>, which runs the Claude model that generates the suggestions. Once the response comes back, the screenshot and the context text are discarded from our servers. We do not log message content and we do not use your content to train any AI model.</p>
-
-            <h3>Device identifier</h3>
-            <p>On first launch we generate a random UUID and store it on your device. We send this ID in the <code>X-User-Id</code> header so our backend can enforce the free-tier daily generation limit. The ID is not tied to your Apple ID, your email, or any account — it is a device-local random string. You can reset it at any time by deleting and reinstalling the app.</p>
-
-            <h3>Subscription data</h3>
-            <p>If you purchase a Griz subscription, the payment is processed entirely by Apple through the App Store. We use <strong>RevenueCat</strong> to verify your subscription status. RevenueCat receives an anonymous app user ID (the same device UUID described above) and Apple's receipt data. We and RevenueCat do not receive your name, email address, or payment details. See RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
-
-            <h3>Local device data</h3>
-            <p>The following data is stored only on your device and never transmitted to our servers:</p>
+            <h2>4. Third-Party Processors</h2>
+            <p class="section-intro">We rely on a few trusted services to operate Griz.</p>
+            <h3>Anthropic (Claude API)</h3>
+            <p>Screenshots and text you submit are sent to Anthropic's API for analysis. Under their API terms, Anthropic does not train on your submitted content by default. Read their <a href="https://www.anthropic.com/legal/terms-of-service" target="_blank" rel="noopener">Terms of Service</a>.</p>
+            <h3>Data Processing Agreement — Anthropic</h3>
+            <p>By using Griz, you authorize Poppies Studios to share your screenshots and message context with Anthropic, Inc., as a data processor. Anthropic's API Terms of Service and Privacy Policy govern their processing of this data. For EU/UK users (GDPR), Poppies Studios has a Data Processing Addendum (DPA) in place with Anthropic covering EU data transfers. You may request a copy at <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a>.</p>
+            <h3>RevenueCat</h3>
+            <p>Subscription and billing is managed by RevenueCat, a U.S.-based subscription analytics platform. RevenueCat receives your device UUID and subscription status (whether your subscription is active, plan type, renewal date) from Apple. RevenueCat does not receive any screenshot or message content. RevenueCat's Privacy Policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a>. Poppies Studios has a standard Data Processing Addendum in place with RevenueCat for GDPR/CCPA compliance.</p>
+            <h3>Apple</h3>
+            <p>Apple processes all In-App Purchases and subscription billing. We do not handle your payment information directly.</p>
+            <h3>Fly.io (Backend Hosting)</h3>
+            <p>Griz's backend (griz-api) is hosted on Fly.io, a U.S.-based container platform. Your screenshot/message content is not stored persistently, so Fly does not store it either.</p>
+            <h3>Cloudflare Pages (Legal Pages)</h3>
+            <p>These legal pages are hosted on Cloudflare Pages. Cloudflare may log access patterns. No personal or message data is stored here.</p>
+            <h2>5. Data Retention</h2>
+            <p class="section-intro">We don't keep your content longer than necessary.</p>
             <ul>
-                <li>Your onboarding intention (e.g., "more dates," "better first messages") and settings.</li>
-                <li>The history of generated suggestions and attached screenshots shown in the <em>Messages</em> tab, saved via Apple's SwiftData framework.</li>
-                <li>Preferences, sound, and notification toggles.</li>
+                <li><strong>Screenshots &amp; messages:</strong> Processed in-flight and discarded immediately. Not written to disk.</li>
+                <li><strong>API logs:</strong> Retained for 30 days for debugging, then deleted.</li>
+                <li><strong>Device UUID &amp; quota counters:</strong> Retained indefinitely to enforce rate-limiting.</li>
+                <li><strong>Subscription status:</strong> Retained as long as your account is active, then deleted 90 days after last login.</li>
+                <li><strong>Local app history:</strong> Stored on your device. You can delete it by uninstalling Griz.</li>
             </ul>
-
-            <h2>2. What we do <u>not</u> collect</h2>
-            <ul>
-                <li>We do not collect your name, email address, phone number, or location.</li>
-                <li>We do not use advertising SDKs, marketing trackers, or analytics SDKs that identify you. Griz is ad-free by design.</li>
-                <li>We do not store, log, or retain the content of your screenshots or conversations after the AI response has been returned.</li>
-                <li>We do not share or sell data to advertisers, data brokers, or any third party.</li>
-                <li>We do not access your camera, microphone, contacts, or health data.</li>
-            </ul>
-
-            <h2>3. Permissions we request</h2>
-
-            <h3>Photos access</h3>
-            <p>The Griz app and iMessage extension request access to your Photos library so you can pick a screenshot, or so the app can surface the most recent screenshot on the home screen. When permission is granted, we only load the specific image you pick or the latest screenshot you requested. We do not index your library, we do not read image metadata beyond what's needed to identify screenshots, and we do not upload anything until you explicitly tap <em>Generate</em>.</p>
-
-            <h3>Keyboard Full Access</h3>
-            <p>iOS requires a custom keyboard to be granted "Full Access" in order to make any network request — including sending the text around your cursor to our AI. Without Full Access, the Griz keyboard runs in a sandbox that cannot reach the internet, so suggestions cannot be generated. We only read the text surrounding your cursor in the active field (up to 500 characters before and after), and only when you explicitly tap the Generate button. The Griz keyboard does not log keystrokes, does not silently exfiltrate data, and does not read fields you have not interacted with.</p>
-
-            <h3>Local notifications</h3>
-            <p>Griz may ask permission to send local reminders (for example, a heads-up before a trial ends). These notifications are scheduled on your device and are not pushed from our servers.</p>
-
-            <h2>4. How screenshots and chat text are processed</h2>
-            <div class="callout">
-                <p style="margin-bottom: 8px;"><strong>In plain terms:</strong> your screenshot goes from your phone → to our server → to Anthropic's Claude model → back to your phone. Then it's gone from our servers.</p>
-                <p style="margin-bottom: 0;">Our server holds the image only in memory for the duration of the AI call. It is not written to persistent storage and it is not retained in logs.</p>
-            </div>
-            <p>Anthropic processes the image and context text to generate suggestions. Under Anthropic's commercial terms, API content is not used to train Anthropic's models and is retained only transiently to provide the service. Learn more at <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a>.</p>
-
-            <h2>5. Third parties we share data with</h2>
-            <p>We only share content and metadata with service providers strictly required to deliver the product:</p>
-            <ul>
-                <li><strong>Anthropic, PBC</strong> — processes the screenshots and text you submit to produce AI replies. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a>.</li>
-                <li><strong>RevenueCat, Inc.</strong> — verifies your subscription status using an anonymous device ID. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</li>
-                <li><strong>Apple, Inc.</strong> — handles App Store purchases, delivers the app and its extensions, and provides platform services (Photos picker, Sign in with Apple if enabled). See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</li>
-                <li><strong>Fly.io, Inc.</strong> — hosts our backend servers. Fly.io receives network traffic and standard server logs. See <a href="https://fly.io/legal/privacy-policy/" target="_blank" rel="noopener">fly.io/legal/privacy-policy</a>.</li>
-            </ul>
-            <p>We do not share data with advertisers, data brokers, or any party beyond the providers listed above.</p>
-
-            <h2>6. Data retention</h2>
-            <ul>
-                <li><strong>Screenshot and chat content:</strong> held in memory on our server for the duration of the AI call, then discarded. Not logged, not persisted.</li>
-                <li><strong>Device UUID + daily generation count:</strong> held in memory on our server and reset at 00:00 UTC each day. The UUID is stored on your device until you delete the app.</li>
-                <li><strong>Subscription status:</strong> retained by RevenueCat and Apple for as long as your subscription is active, per their retention policies.</li>
-                <li><strong>Local app data (history, preferences):</strong> stored on your device for as long as the app is installed. Removed when you delete the app.</li>
-            </ul>
-
-            <h2>7. Children's privacy</h2>
-            <p>Griz is intended for users <strong>17 years of age or older</strong>. The App Store age rating reflects this. We do not knowingly collect any information from children under 17. If you believe a minor has used the Service, contact us and we will promptly delete any associated data.</p>
-
-            <h2>8. Your rights</h2>
-            <p>Because Griz does not maintain user accounts, we do not have a profile to retrieve on request. You can exercise the following controls directly from the app:</p>
-            <ul>
-                <li><strong>Stop future processing:</strong> delete the Griz app. The device UUID is removed and no further requests are sent.</li>
-                <li><strong>Clear local history:</strong> delete individual conversations from the Messages tab, or delete the app.</li>
-                <li><strong>Revoke permissions:</strong> turn off Photos, Full Access, or notifications at any time in <em>Settings → Privacy &amp; Security</em> or <em>Settings → General → Keyboard</em> on your device.</li>
-            </ul>
-            <p>Residents of the EU, UK, and California have additional rights under the GDPR, UK GDPR, and CCPA including access, deletion, and the right to object to processing. To exercise these rights, contact us at the email below. Because our records are minimal and not tied to an identity, we may ask you to verify your device UUID to process a request.</p>
-
+            <h2>6. Your Privacy Rights</h2>
+            <p class="section-intro">You have the right to access, delete, or correct your information.</p>
+            <h3>Right to Access</h3>
+            <p>You can request a copy of the data we hold about you. Email <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a> with the subject "Data Subject Access Request" and include your device UUID. We will respond within 30 days.</p>
+            <h3>Right to Deletion</h3>
+            <p>You can request that we delete your device UUID and associated quota data. Email us with the subject "Data Deletion Request" and include your device UUID. We will delete the data within 30 days.</p>
+            <h3>CCPA Rights (California Residents)</h3>
+            <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA): right to know, right to delete, right to opt-out of sale/sharing (we do not sell or share data), and right to non-discrimination. To exercise any CCPA right, email <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a> with "CCPA Request" in the subject line and your device UUID. We will respond within 45 days.</p>
+            <h3>GDPR Rights (EU/UK Residents)</h3>
+            <p>If you are located in the EU or UK, you have rights under GDPR: right to access, right to rectification, right to erasure, right to restrict processing, right to data portability, and right to object. To exercise any GDPR right, email <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a> with "GDPR Request" in the subject line and your device UUID. We will respond within 30 days.</p>
+            <h2>7. Children &amp; COPPA Compliance</h2>
+            <p class="section-intro">Griz is not for children under 18.</p>
+            <p>Griz is designed for individuals 18 years or older and is not intended for children under 13. We comply with the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect personal information from anyone under 18. If we become aware that a user is under 18, we will delete their device UUID and associated data immediately. If you are a parent or guardian and believe your child has created a Griz account, please contact us immediately at <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a>.</p>
+            <h2>8. Data Transfers</h2>
+            <p class="section-intro">Your data is processed in the United States.</p>
+            <p>Poppies Studios and our third-party processors are based in the United States. By using Griz, you consent to the transfer of your information to the United States and processing in accordance with U.S. law.</p>
             <h2>9. Security</h2>
-            <p>All traffic between the app and our backend is encrypted with TLS. The backend stores the Anthropic API key in environment variables on the server only — it is never shipped in the app binary. We review and update our infrastructure periodically. That said, no system is 100% secure; if we become aware of a breach that affects you, we will notify you in accordance with applicable law.</p>
-
-            <h2>10. International transfers</h2>
-            <p>Griz's backend runs on infrastructure located in the United States. If you use the Service from outside the U.S., your content will be transferred to and processed in the U.S. by us, Anthropic, RevenueCat, and Apple, each of which maintains standard safeguards for international data transfers.</p>
-
-            <h2>11. Changes to this policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will post the revised policy on this page with an updated "Last updated" date. Material changes will be surfaced in the app on first launch after the change.</p>
-
-            <h2>12. Contact us</h2>
-            <p>If you have questions about this policy, want to exercise a privacy right, or want to report a security concern, reach us at:</p>
-            <div class="contact-card">
-                <p class="company">GOOSEBUMPS LLC</p>
-                <p>Email: <a href="mailto:griz@gsbmps.com">griz@gsbmps.com</a></p>
-                <p style="color: var(--text-muted); font-size: 14px; margin-top: 8px;">We typically reply within 48 hours.</p>
+            <p class="section-intro">We use industry-standard protections, though no system is perfectly secure.</p>
+            <p>All communication between your device and our backend is encrypted via HTTPS/TLS 1.2 or higher. We do not store screenshots or message content to disk, which minimizes the risk of a data breach. If you believe your device UUID has been compromised, email us immediately.</p>
+            <h2>10. Changes to This Policy</h2>
+            <p class="section-intro">We may update this policy. We'll let you know if anything material changes.</p>
+            <p>We reserve the right to modify this Privacy Policy at any time. If we make material changes, we will update the "Last updated" date at the top of this page. Continued use of Griz after a change constitutes your acceptance of the updated Privacy Policy.</p>
+            <h2>11. Contact Us</h2>
+            <p class="section-intro">Questions or concerns? Get in touch.</p>
+            <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us:</p>
+            <p>
+                <strong>Poppies Studios</strong><br>
+                <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a>
+            </p>
+            <p>We aim to resolve any concerns within 30 days.</p>
+            <div class="updated">
+                <strong>Last updated:</strong> April 27, 2026<br>
+                <a href="support.html">Need help?</a> &bull; <a href="terms.html">Terms of Service</a>
             </div>
         </div>
     </main>
-
     <footer>
-        <p>&copy; 2026 GOOSEBUMPS LLC. All rights reserved.</p>
+        <p>&copy; 2026 Poppies Studios. All rights reserved.</p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 16px;">Claude and Claude AI are trademarks of Anthropic, Inc. Griz is an independent product by Poppies Studios and is not endorsed by Anthropic.</p>
         <div class="footer-links">
             <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
+            <a href="eula.html">EULA</a>
             <a href="support.html">Support</a>
-            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">EULA</a>
         </div>
     </footer>
-
 </body>
 </html>

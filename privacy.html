@@ -177,7 +177,7 @@
             <h3>Device ID</h3>
             <p>A unique, auto-generated UUID is created on first app launch and stored in the iOS app group shared by all three targets (main app, keyboard extension, iMessage extension). This ID is used to track your daily generation quota (3 free, unlimited with subscription), store your subscription status from RevenueCat, and associate your generation history in the local database. The device ID is not tied to your identity — it is not your name, email, phone number, or Apple ID.</p>
             <h3>Screenshot &amp; Text Content</h3>
-            <p>When you tap "Generate," any screenshot or message context you submit is sent to our backend via HTTPS, immediately forwarded to Anthropic's Claude model, NOT stored to disk, NOT logged as content, and discarded after the API response is returned to your device. We use Anthropic's commercial API, which does not train on your data by default.</p>
+            <p>When you tap "Generate," any screenshot or message context you submit is sent to our backend via HTTPS, immediately forwarded to Anthropic's Claude model, NOT stored to disk, NOT logged as content, and discarded after the API response is returned to your device. We use Anthropic's commercial API, which does not train on your data by default. <strong>When using the Griz keyboard extension, up to 500 characters of text surrounding your cursor — which may include messages from other people — is transmitted to Anthropic for processing. See the Terms of Service (Section 3A) for your responsibilities regarding third-party messages.</strong></p>
             <h3>Subscription &amp; Billing</h3>
             <p>Your subscription status is managed by Apple via In-App Purchase and retrieved from RevenueCat. We receive whether you have an active subscription, your subscription plan, and renewal dates. We do NOT receive your credit card number or payment details — Apple handles those.</p>
             <h3>API Logs &amp; Metadata</h3>
@@ -197,8 +197,10 @@
             <p class="section-intro">We rely on a few trusted services to operate Griz.</p>
             <h3>Anthropic (Claude API)</h3>
             <p>Screenshots and text you submit are sent to Anthropic's API for analysis. Under their API terms, Anthropic does not train on your submitted content by default. Read their <a href="https://www.anthropic.com/legal/terms-of-service" target="_blank" rel="noopener">Terms of Service</a>.</p>
+            <h3>Data Processing Agreement — Anthropic</h3>
+            <p>By using Griz, you authorize Poppies Studios to share your screenshots and message context with Anthropic, Inc., as a data processor. Anthropic's API Terms of Service and Privacy Policy govern their processing of this data. For EU/UK users (GDPR), Poppies Studios has a Data Processing Addendum (DPA) in place with Anthropic covering EU data transfers. You may request a copy at <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a>.</p>
             <h3>RevenueCat</h3>
-            <p>Subscription and billing is managed by RevenueCat, a U.S.-based subscription analytics platform. RevenueCat receives your device UUID and subscription status from Apple. RevenueCat does not receive any screenshot or message content.</p>
+            <p>Subscription and billing is managed by RevenueCat, a U.S.-based subscription analytics platform. RevenueCat receives your device UUID and subscription status (whether your subscription is active, plan type, renewal date) from Apple. RevenueCat does not receive any screenshot or message content. RevenueCat's Privacy Policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a>. Poppies Studios has a standard Data Processing Addendum in place with RevenueCat for GDPR/CCPA compliance.</p>
             <h3>Apple</h3>
             <p>Apple processes all In-App Purchases and subscription billing. We do not handle your payment information directly.</p>
             <h3>Fly.io (Backend Hosting)</h3>
@@ -224,9 +226,9 @@
             <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA): right to know, right to delete, right to opt-out of sale/sharing (we do not sell or share data), and right to non-discrimination. To exercise any CCPA right, email <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a> with "CCPA Request" in the subject line and your device UUID. We will respond within 45 days.</p>
             <h3>GDPR Rights (EU/UK Residents)</h3>
             <p>If you are located in the EU or UK, you have rights under GDPR: right to access, right to rectification, right to erasure, right to restrict processing, right to data portability, and right to object. To exercise any GDPR right, email <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a> with "GDPR Request" in the subject line and your device UUID. We will respond within 30 days.</p>
-            <h2>7. Children</h2>
+            <h2>7. Children &amp; COPPA Compliance</h2>
             <p class="section-intro">Griz is not for children under 18.</p>
-            <p>Griz is designed for individuals 18 years or older. We do not knowingly collect personal information from anyone under 18. If we become aware that a user is under 18, we will delete their device UUID and associated data immediately.</p>
+            <p>Griz is designed for individuals 18 years or older and is not intended for children under 13. We comply with the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect personal information from anyone under 18. If we become aware that a user is under 18, we will delete their device UUID and associated data immediately. If you are a parent or guardian and believe your child has created a Griz account, please contact us immediately at <a href="mailto:brain@poppiesstudios.com">brain@poppiesstudios.com</a>.</p>
             <h2>8. Data Transfers</h2>
             <p class="section-intro">Your data is processed in the United States.</p>
             <p>Poppies Studios and our third-party processors are based in the United States. By using Griz, you consent to the transfer of your information to the United States and processing in accordance with U.S. law.</p>
@@ -252,6 +254,7 @@
     </main>
     <footer>
         <p>&copy; 2026 Poppies Studios. All rights reserved.</p>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 16px;">Claude and Claude AI are trademarks of Anthropic, Inc. Griz is an independent product by Poppies Studios and is not endorsed by Anthropic.</p>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="privacy.html">Privacy Policy</a>
